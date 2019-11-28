@@ -6,7 +6,8 @@
   "proxy": "http://localhost:8080",
   "scripts": {
     "dev": "webpack-dev-server --progress",
-    "build": "webpack --mode='production'"
+    "build": "webpack --mode='production'",
+    "format": "prettier --write 'src/**/*.js'"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -22,13 +23,11 @@
     "@fortawesome/free-brands-svg-icons": "^5.7.0",
     "@fortawesome/free-solid-svg-icons": "^5.7.0",
     "@fortawesome/react-fontawesome": "^0.1.4",
-    "aws-amplify": "^1.1.19",
-    "aws-appsync": "^1.7.1",
-    "aws-appsync-react": "^1.2.6",
     "axios": "^0.18.0",
     "dayjs": "^1.8.0",
     "dotenv": "^6.2.0",
     "graphql-tag": "^2.10.1",
+    "prettier": "^1.19.1",
     "react": "^16.7.0",
     "react-apollo": "^2.4.1",
     "react-dom": "^16.7.0",

@@ -1,48 +1,48 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 import {
-  space,
-  width,
-  height,
-  color,
-  position,
-  alignContent,
-  alignItems,
-  justifyContent,
-  borders,
-  borderRadius,
-  textAlign,
-  flexDirection,
-  zIndex,
-  top,
-  bottom,
-  right,
-  left,
-  overflow
-} from "styled-system";
+    space,
+    width,
+    height,
+    color,
+    position,
+    alignContent,
+    alignItems,
+    justifyContent,
+    borders,
+    borderRadius,
+    textAlign,
+    flexDirection,
+    zIndex,
+    top,
+    bottom,
+    right,
+    left,
+    overflow,
+} from 'styled-system';
 
 export const Flex = styled.div`
-  display: flex;
-  flex-direction: ${({ flexDirection }) =>
-    flexDirection ? flexDirection : "column"};
-  ${flexDirection}
-  ${space};
-  ${width};
-  ${color};
-  ${height};
-  ${borders};
-  ${position};
-  ${top};
-  ${bottom};
-  ${right};
-  ${left};
-  ${alignContent};
-  ${alignItems};
-  ${justifyContent};
-  ${borderRadius};
-  ${textAlign};
-  ${zIndex};
-  ${overflow};
-  transform: ${({ rotate }) => (rotate ? `rotate(${rotate})` : null)};
+    display: flex;
+    flex-direction: ${({ flexDirection }) =>
+        flexDirection ? flexDirection : 'column'};
+    ${flexDirection}
+    ${space};
+    ${width};
+    ${color};
+    ${height};
+    ${borders};
+    ${position};
+    ${top};
+    ${bottom};
+    ${right};
+    ${left};
+    ${alignContent};
+    ${alignItems};
+    ${justifyContent};
+    ${borderRadius};
+    ${textAlign};
+    ${zIndex};
+    ${overflow};
+    transform: ${({ rotate }) => (rotate ? `rotate(${rotate})` : null)};
 `;
 
 export const Box = styled.div`
@@ -50,9 +50,9 @@ export const Box = styled.div`
 `;
 
 export const Img = styled.img`
-  ${width};
-  ${height};
-  ${borderRadius};
-  ${position};
-  ${space};
+    ${width};
+    ${height};
+    ${borderRadius};
+    ${position};
+    ${space};
 `;
