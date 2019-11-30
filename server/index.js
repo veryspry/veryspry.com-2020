@@ -6,12 +6,10 @@ const app = express();
 const bodyParser = require("body-parser");
 const morgan = require("morgan");
 const path = require("path");
-const routes = require("./routes");
 // variables
 const port = 8080;
 
 // Set up middleware
-
 app.use(morgan("dev"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -24,12 +22,11 @@ app.use((req, res, next) => {
   );
   next();
 });
-app.use(express.static(`${__dirname}/../ui/dist`));
-app.use(routes);
+app.use(express.static(path.join(__dirname, "../ui/dist")));
+app.use(express.static(path.join(__dirname, "../ui/public")));
 
 // Default Routes
 app.get("*", (req, res) => {
-  console.log("__dirname", __dirname);
   res.sendFile(path.join(__dirname, "../", "ui/dist/index.html"));
 });
 
