@@ -9,8 +9,6 @@ import GlobalStyles from './styles/global';
 
 import theme from './theme';
 
-const hello = 'yeas';
-
 const App = props => (
     <Fragment>
         {/* Global Style reset */}
