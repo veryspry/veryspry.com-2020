@@ -6,11 +6,11 @@ const Home = props => {
     const sections = [
         {
             text:
-                'Hi, I’m Matt! I am a Software Engineer with a keen eye for design and a knack for creativity. I used to be a professional musician but realized that I really loved taking on the daily challenges that coding presents.',
+                'Hi, I’m Matt! I am a Software Engineer with a keen eye for design and a knack for creativity. I used to be a professional musician but realized that I really loved taking on the daily challenges that engineering presents.',
         },
         {
             text:
-                "As a musician, I learned that creating something shouldn’t be hindered by what you have to work with. I embrace the tools at hand and work to design and build something beautiful. I work in Node, Express, GraphQl, AWS, Postgres, React, React-Native, mocha.js, chai.js, plain old JavaScript & CSS. (The list continues to grow.) I’m also a songwriter and music theory nerd. (Guitar & pedal steel if you're interested.)",
+                "As a musician, I learned that creating something shouldn’t be hindered by what you have to work with. I embrace the tools at hand and work to design and build something beautiful.",
         },
     ];
 

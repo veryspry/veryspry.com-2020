@@ -10,4 +10,4 @@ format:
 	yarn format
 
 clean:
-	rm -rf node_modules yarn.lock:
+	rm -rf node_modules yarn.lock dist
