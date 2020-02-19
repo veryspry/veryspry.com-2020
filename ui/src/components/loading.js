@@ -1,12 +1,14 @@
 import React from 'react';
-import { Flex, BodyHome } from './';
+import { Flex, BodyHome } from 'components';
 
-const Loading = props => {
-    return (
-        <Flex justifyContent="center" alignItems="center" height="60vh">
-            <BodyHome> Loading...</BodyHome>
-        </Flex>
-    );
+const Loading = ({ loadingMessage }) => (
+    <Flex justifyContent="center" alignItems="center" height="60vh">
+        <BodyHome>{loadingMessage}</BodyHome>
+    </Flex>
+);
+
+Loading.defaultProps = {
+    loadingMessage: 'Loading...',
 };
 
 export default Loading;

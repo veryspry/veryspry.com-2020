@@ -41,6 +41,9 @@ module.exports = () => {
         favicon: path.join(__dirname, "public/favicon.ico")
       }),
       new webpack.DefinePlugin(envKeys)
-    ]
+    ],
+    resolve: {
+      modules: ['node_modules', path.resolve(__dirname, 'src')]
+    }
   };
 };

@@ -1,7 +1,14 @@
 import React from 'react';
+import { Flex, BodyHome } from 'components';
 
-const Error = props => {
-    return <div>Sorry, there was an Error...</div>;
+const Error = ({ errorMessage }) => (
+    <Flex justifyContent="center" alignItems="center" height="60vh">
+        <BodyHome>{errorMessage}</BodyHome>
+    </Flex>
+);
+
+Error.defaultProps = {
+    errorMessage: 'Sorry, there was a Error.',
 };
 
 export default Error;

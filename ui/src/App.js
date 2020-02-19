@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Fragment } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 
@@ -8,6 +8,8 @@ import DefaultRoute from './default-route';
 import GlobalStyles from './styles/global';
 
 import theme from './theme';
+
+const hello = 'yeas';
 
 const App = props => (
     <Fragment>

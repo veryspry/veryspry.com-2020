@@ -2,7 +2,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled from 'styled-components';
 import { space, width, height, position, borderRadius } from 'styled-system';
 
-export default styled(FontAwesomeIcon)`
+import { filterProps } from 'utils';
+
+export default styled(filterProps(FontAwesomeIcon)(['borderRadius']))`
     margin: 0;
     padding: 0;
     ${height};
